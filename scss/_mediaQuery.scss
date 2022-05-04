@@ -1,0 +1,38 @@
+@media only screen and (min-width: 600px) {
+  .fp-controlArrow {
+    display: block;
+  }
+
+  section #profile .profile-card-face {
+    height: 278px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .fp-slidesNav.bottom {
+    bottom: 15%;
+    text-align: center;
+  }
+  section.etc div.etcContentsBox {
+    @include displayFlex(flex, row, nowrap, center, center);
+    gap: 15px 15px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  section.etc div.etcContentsBox div.etcContents {
+    height: 280px;
+  }
+  div.slide-slideWrap {
+    @include displayFlex(flex, row, wrap, center, center);
+  }
+  div.slide-slideWrap-worktxt h3 {
+    text-align: left;
+  }
+  div.slide-slideWrap-worktxt h3 .linkbox .bubbly-button {
+    margin: 0px 0px;
+  }
+  section.etc ul.etcbox li {
+    width: 106px;
+    height: 30px;
+    font-size: 1.2rem;
+  }
+}

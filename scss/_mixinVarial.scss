@@ -1,0 +1,35 @@
+$font-kr: "Noto Sans KR", sans-serif;
+$font-krPen: "Nanum Pen Script", cursive;
+$font-Title: "Bungee Shade", cursive;
+$font-egpen: "Bangers", cursive;
+
+$color-white: #fff;
+$color-fontBlack: #333;
+$color-fontSub: #ccc;
+$color-point: #632df5;
+
+@mixin transformCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin displayFlex(
+  $flex,
+  $flexDirection,
+  $flexWrap,
+  $justifiContent,
+  $alignItem
+) {
+  display: $flex;
+  flex-direction: $flexDirection;
+  flex-wrap: $flexWrap;
+  justify-content: $justifiContent;
+  align-items: $alignItem;
+}
+%buttonShape {
+  width: 100px;
+  height: 35px;
+  border-radius: 15px;
+  background: $color-point;
+}
