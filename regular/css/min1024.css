@@ -1,0 +1,116 @@
+
+/*header Start*/
+header{
+	overflow: hidden;
+	width: 80%;
+	margin: auto;
+}
+
+
+	
+header h1{
+   float:left;
+   width: 20%;
+}
+
+
+header nav{
+	width: 60%;
+	float:left;
+	margin-top: 38px;
+}
+header div#topIcon{
+   float: right;
+    margin-top:38px;
+}
+/*gallStart*/
+
+   
+div#gall ul li{
+   
+    float: left;
+    width: 20%;
+    margin-right: 22px;
+	
+}
+
+/*section Start*/
+section div#stionWrap div#leftT p{
+    padding: 15px 0;
+    margin-top: 25px;
+    font-size: 20px;
+}
+section div#stionWrap div#leftT p>span{
+    
+    
+    font-size: 13px;
+}
+section div#stionWrap div#leftT span{
+   
+   
+    font-size: 10px;
+
+}
+/*article*/
+
+
+div#art80.on{
+    left: 60px;
+}
+
+
+
+
+
+/*news Start*/
+
+div#news figure{
+   
+	width: 30%;
+	
+}
+
+
+div#news figure div{ 
+    
+    overflow: hidden;
+}
+
+div#news figure img{
+     
+     width: 100%;
+     
+    cursor:pointer;
+    
+
+    
+}
+
+div#news figure:hover img{
+    width: 100%;
+    transform:scale3d(1.6,1.6,1) rotate3d(0,0,0,0.01deg);
+    transition:transform 15s ease-out;
+   
+    
+    
+}
+/*contact Start*/
+div#contact{
+    margin-top: 30px;
+}
+div#contact>div{
+   
+    
+    left:80px;
+}
+
+/*footerStart*/
+
+footer dl dd>span{
+    margin-right: 10px;
+    
+}
+
+   
+    
+

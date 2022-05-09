@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레귤러볼드</title>
+    <link rel="apple-touch-icon-precomposed" href="icon/ic_launcher.png"><!-- 구형/ 안드로이드 --> 
+    <link rel="stylesheet" href="css/min320andmax480.css">
+    <link rel="stylesheet" href="css/min481andmax1023.css" media="all and (min-width:481px)" >
+    <link rel="stylesheet" href="css/min1024.css" media="all and (min-width:1024px)" >
+    <script
+      src="https://code.jquery.com/jquery-3.2.0.min.js"
+      integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I="
+      crossorigin="anonymous">
+    </script>
+	<script>
+	
+	$(function() {
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 250) {
+      $('#topBtn').fadeIn();
+    } else {
+      $('#topBtn').fadeOut();
+    }
+  });
+
+  $("#topBtn").click(function() {
+    $('html, body').animate({
+      scrollTop : 0
+    }, 400);
+    return false;
+  });
+ 
+    //gall modal
+          $("#gall").append('<div id="back"></div><div id="main"></div>');
+            $('a.modal').click(function(){
+                $("#back").show();
+                $("#main").show().html('<img src="'+$(this).attr('href')+'">');
+                return false;
+            });
+            $("#back").click(function(){
+                $(this).hide();
+                $("#main").hide();
+            });
+        
+        
+        
+    //article 
+    
+        
+});
+	
+	</script>
+    
+</head>
+<body>
+    <div id="topBtn">
+        <img src="images/top.jpg" alt="topbtn">
+        
+    </div>
+    <header><!--headerStart-->
+       <h1>
+           <a href="index.html"><img src="images/logo.jpg" alt="main logo"></a>
+            
+       </h1>
+       <nav>
+           <ul>
+               <li>about</li>
+               <li>work</li>
+               <li>stroy</li>
+               <li>contact</li>
+               
+           </ul>
+       </nav>
+       
+       <div id="menu_btn">
+            <a href="#">MENU <img src="images/hambug.png" alt="hamBtn"></a> <!--a안에 묶어주기-->
+            
+       </div> 
+       
+       <div id="topIcon">
+           <a href="#"><img src="images/f_s.jpg"  alt="sns"></a>
+       </div>
+        
+        
+    </header>
+    <section>
+       <div id="stionWrap">
+        <div id="leftT">
+            <p> Necessitatibus, sint. Iusto at consequuntur impedit, doloremque officia hic enim temporibus magni placeat.
+            
+            <span>Lorem ipsum dolor sit amet, con<br>sect adipisicing elit.</span></p>
+            
+            <span  class="actionBtn1">
+            <a href="#">
+                <span class="hover"></span>
+	            <span>Preview</span>
+            </a>
+            </span>
+        </div>
+        <div id="rightB">
+            <img src="images/rb_logo.png" alt="brand logo">
+        </div>
+       </div>
+    </section>
+    
+    <div id="gall"><!--gall Start-->
+          <ul>
+              <li><a href="images/01_brand.jpg" class="modal"><img src="images/01_brand.jpg" alt=""></a></li>
+              <li><a href="images/02_uiux.jpg" class="modal"><img src="images/02_uiux.jpg" alt=""></a></li>
+              <li><a href="images/03_campaign.jpg"  class="modal"><img src="images/03_campaign.jpg" alt=""></a></li>
+              <li><a href="images/04_movie.jpg" class="modal"><img src="images/04_movie.jpg" alt=""></a></li>
+              <li><a href="images/05_printpackage.jpg" class="modal"><img src="images/05_printpackage.jpg" alt=""></a></li>
+              <li><a href="images/06_exhibition.jpg" class="modal"><img src="images/06_exhibition.jpg" alt=""></a></li>
+              <li><a href="images/07_bookproduct.jpg" class="modal"><img src="images/07_bookproduct.jpg" alt=""></a></li>
+              <li><a href="images/08_illustgraphic.jpg" class="modal"><img src="images/08_illustgraphic.jpg" alt=""></a></li>
+          </ul>
+          
+        
+        
+    </div>
+    
+    <div id="article">
+        
+           <h2>about Regular <span>Bold</span>
+           </h2>
+            <span>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem illo at eum eligendi 
+            
+            </span>
+            <span>
+            <a href="javascript:;" class="actionBtn6">
+	             <span class="hover">		
+	             <span class="txt">
+	                 more info
+	             </span>
+	            </span>
+            </a>
+            </span>
+            
+            <div>
+                <img src="images/people_01-1.png" alt="img1">
+            </div>
+            
+        
+    </div>
+    
+    <div id="news"><!--newsStart-->
+       
+             <h2>Our News</h2>
+             <span>고객 브랜드에 통합적으로 반응하고 함께 하는 Regular Bold입니다. </span>
+                 <figure>
+                     <div><a href="#"><img src="images/recruit.jpg" alt="채용"></a></div>
+                     <figurecaption><span>[recruit]RegularBold채용공지</span> 2020년 3월 27일</figurecaption>
+                 </figure>
+                 <figure>
+                     <div><a href="#"><img src="images/degital_media.jpg" alt="디지털 미디어 디자인"></a></div>
+                    <figurecaption> <span>디지털 미디어 디자인 감정과 이성의 경계의 지지</span> 2020년 3월 30일</figurecaption>
+                 </figure>
+                 <figure>
+                     <div><a href="#"><img src="images/news.jpg" alt="트랜드"></a></div>
+                     <figurecaption><span>2020년 트렌드 인사이트 &amp; 아웃사이트</span> 2020년 4월 01일</figurecaption>
+                 </figure>
+             
+        
+        
+    </div>
+    <div id="contact"><!--contact Start-->
+       
+        <h2>Contact</h2>
+        <span>고객 브랜드에 통합식으로 반응하고 함께하는 Regular<a>Bold</a>입니다.</span>
+        <span>More Info</span>
+       
+        
+    </div>
+    
+    <footer>
+       <dl><!--dl dd dt 로 수정-->
+           <dt>COPYRIGHT</dt>
+           <dd>Powered by RegularBold</dd>
+        </dl>
+         <dl>
+           <dt>FOLLOW</dt>
+           <dd>Facebook</dd>
+         </dl>   
+         <dl> 
+           <dt>COTACT</dt>
+            <dd>
+            <span>E-mail / hellow@gamail.com</span>
+            <span>TEL/02 1253 4523 </span>
+       
+            </dd>
+            
+        </dl>
+      
+        
+    </footer>
+</body>
+</html>
